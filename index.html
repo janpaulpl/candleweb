@@ -10,14 +10,18 @@
     <!-- tiny vela -->
     <link rel="shortcut icon" type="image/png" href="pics/favicon.png">
     <style>
+        html {
+            overflow-y: hidden;
+        }
+
         body {
             background-color: black;
         }
 
         .candle {
-            height: 80vh;
-            margin-top: 10vh;
-            margin-bottom: 10vh;
+            height: 78vh;
+            margin-top: 2vh;
+            margin-bottom: 12vh;
             border-radius: 5vw;
             margin-left: 0px;
             margin-right: 0px;
@@ -29,7 +33,7 @@
             grid-template-rows: auto auto auto;
             justify-content: center;
             grid-gap: 0px 0px;
-
+            
         }
 
         #grid-item1 {
@@ -38,11 +42,20 @@
             min-width: 100%;
         }
 
+        #grid-item2 {
+            grid-column: 2;
+            grid-row: 1;
+            height: 8vh;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 2vh;
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
+        <img class="" id="grid-item2" src="pics\logo.png">
         <img class="candle" id="grid-item1" src="pics\candle.gif">
     </div>
 </body>
